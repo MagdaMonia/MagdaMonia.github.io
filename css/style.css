@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, css/_reset.scss */
+/* line 6, css/style.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, css/_reset.scss */
+/* line 28, css/style.css */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, css/_reset.scss */
+/* line 33, css/style.css */
+body {
+  line-height: 1; }
+
+/* line 34, css/_reset.scss */
+/* line 37, css/style.css */
+ol, ul {
+  list-style: none; }
+
+/* line 37, css/_reset.scss */
+/* line 41, css/style.css */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, css/_reset.scss */
+/* line 45, css/style.css */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, css/_reset.scss */
+/* line 51, css/style.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 4, css/style.scss */
+/* line 56, css/style.css */
+body {
+  padding: 32px;
+  background: #f9f9f9;
+  font-family: 'Arial', sans-serif; }
+
+/* line 10, css/style.scss */
+/* line 62, css/style.css */
+.groups {
+  border: 2px solid #e5e5e5;
+  padding: 32px;
+  border-radius: 8px;
+  background: #ffffff; }
+
+/* line 17, css/style.scss */
+/* line 69, css/style.css */
+.days {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  color: #878787; }
+
+/* line 25, css/style.scss */
+/* line 77, css/style.css */
+.weather {
+  line-height: 22px;
+  padding: 16px 8px; }
+
+/* line 30, css/style.scss */
+/* line 82, css/style.css */
+.weather_city {
+  font-size: 32px;
+  display: block; }
+
+/* line 35, css/style.scss */
+/* line 87, css/style.css */
+.weather__name {
+  display: block;
+  font-weight: 700; }
+
+/* line 40, css/style.scss */
+/* line 92, css/style.css */
+.weather-main__name {
+  display: inline-block; }
+
+/* line 44, css/style.scss */
+/* line 96, css/style.css */
+.temperature {
+  display: flex;
+  line-height: 22px; }
+
+/* line 49, css/style.scss */
+/* line 101, css/style.css */
+.weather__text, .temperature__date-text {
+  color: #878787; }
+
+/* line 53, css/style.scss */
+/* line 105, css/style.css */
+.properties__value {
+  color: #000000; }
+
+/* line 57, css/style.scss */
+/* line 109, css/style.css */
+.weatherNextDay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px; }
+
+/* line 63, css/style.scss */
+/* line 115, css/style.css */
+.weather__temperature {
+  font-weight: 700; }
+
+/* line 67, css/style.scss */
+/* line 119, css/style.css */
+.weather-main__date {
+  margin-bottom: 16px;
+  display: block; }
+
+/* line 72, css/style.scss */
+/* line 124, css/style.css */
+.temperature__group {
+  vertical-align: super;
+  width: 50%; }
+
+/* line 77, css/style.scss */
+/* line 129, css/style.css */
+.temperature__group-text {
+  font-size: 54px; }
+
+/* line 81, css/style.scss */
+/* line 133, css/style.css */
+.temperature__group-degree {
+  vertical-align: top;
+  margin-top: 10px;
+  display: inline-block; }
+
+/* line 87, css/style.scss */
+/* line 139, css/style.css */
+.temperature__date {
+  width: 50%; }
+
+/* line 91, css/style.scss */
+/* line 143, css/style.css */
+.properties__el {
+  color: #878787; }
+
+/* line 95, css/style.scss */
+/* line 147, css/style.css */
+.properties__value {
+  color: #000000; }
+
+/* line 99, css/style.scss */
+/* line 151, css/style.css */
+.select {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  cursor: pointer;
+  color: #878787;
+  border: none;
+  outline: none;
+  font-weight: 700; }
+
+@media (max-width: 870px) {
+  /* line 111, css/style.scss */
+  /* line 163, css/style.css */
+  .weatherNextDay {
+    flex-direction: column; }
+  /* line 115, css/style.scss */
+  /* line 166, css/style.css */
+  .weather {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    align-items: center; }
+  /* line 121, css/style.scss */
+  /* line 172, css/style.css */
+  .weather__name {
+    min-width: 90px; } }
+
+@media (max-width: 500px) {
+  /* line 127, css/style.scss */
+  /* line 177, css/style.css */
+  body {
+    padding: 16px; }
+  /* line 130, css/style.scss */
+  /* line 180, css/style.css */
+  .groups {
+    padding: 16px; }
+  /* line 133, css/style.scss */
+  /* line 183, css/style.css */
+  .weather__pollenCount {
+    display: block;
+    text-align: center; }
+  /* line 138, css/style.scss */
+  /* line 187, css/style.css */
+  .weather__img {
+    width: 32px; } }
+
+@media (max-width: 380px) {
+  /* line 144, css/style.scss */
+  /* line 192, css/style.css */
+  body {
+    padding: 8px; }
+  /* line 147, css/style.scss */
+  /* line 195, css/style.css */
+  .groups {
+    padding: 8px; } }

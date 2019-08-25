@@ -1,0 +1,150 @@
+@import "reset";
+@import "variables";
+
+body {
+  padding: 32px;
+  background: $color-light-gray;
+  font-family: 'Arial', sans-serif;
+}
+
+.groups {
+  border: 2px solid $color-gray;
+  padding: 32px;
+  border-radius: 8px;
+  background: $color-white;
+}
+
+.days {
+  padding: 32px;
+  background: $color-white;
+  border: 1px solid $color-gray;
+  text-transform: uppercase;
+  color: $color-dark-gray;
+}
+
+.weather {
+  line-height: 22px;
+  padding: 16px 8px;
+}
+
+.weather_city {
+  font-size: 32px;
+  display: block;
+}
+
+.weather__name {
+  display: block;
+  font-weight: $font-weight-bold;
+}
+
+.weather-main__name {
+  display: inline-block;
+}
+
+.temperature {
+  display: flex;
+  line-height: 22px;
+}
+
+.weather__text, .temperature__date-text {
+  color: $color-dark-gray;
+}
+
+.properties__value {
+  color: $color-black;
+}
+
+.weatherNextDay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.weather__temperature {
+  font-weight: $font-weight-bold;
+}
+
+.weather-main__date {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.temperature__group {
+  vertical-align: super;
+  width: 50%;
+}
+
+.temperature__group-text {
+  font-size: 54px;
+}
+
+.temperature__group-degree {
+  vertical-align: top;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.temperature__date {
+  width: 50%;
+}
+
+.properties__el {
+  color: $color-dark-gray;
+}
+
+.properties__value {
+  color: $color-black;
+}
+
+.select {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  cursor: pointer;
+  color: $color-dark-gray;
+  border: none;
+  outline: none;
+  font-weight: $font-weight-bold;
+}
+
+@media (max-width: 870px) {
+  .weatherNextDay {
+    flex-direction: column;
+  }
+
+  .weather {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $color-gray;
+    align-items: center;
+  }
+  .weather__name {
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 16px;
+  }
+  .groups {
+    padding: 16px;
+  }
+  .weather__pollenCount {
+    display: block;
+    text-align: center;
+  }
+
+  .weather__img {
+    width: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    padding: 8px;
+  }
+  .groups {
+    padding: 8px;
+  }
+}
