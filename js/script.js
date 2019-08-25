@@ -46,7 +46,7 @@ function showWeatherForDays(date, id) {
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
     get(
-        `http://dev-weather-api.azurewebsites.net/api/city/${id}/weather?date=${year}-${month}-${day}`,
+        `https://dev-weather-api.azurewebsites.net/api/city/${id}/weather?date=${year}-${month}-${day}`,
         function (daysWeather) {
             showHeadWeather(daysWeather[0]);
             for (let i = 0; i < daysWeather.length; i++) {
@@ -98,7 +98,7 @@ function showSmallDay(index, weather) {
 }
 
 function selectValue() {
-    get('http://dev-weather-api.azurewebsites.net/api/city', function (cities) {
+    get('https://dev-weather-api.azurewebsites.net/api/city', function (cities) {
         for (let i = 0; i < cities.length; i++) {
             let option = document.createElement("option");
             option.setAttribute("value", cities[i].id);
